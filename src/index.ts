@@ -3,6 +3,10 @@ import cors from "cors";
 
 import { router as Router } from "./routes"
 import { PORT } from "./config";
+import { connectDB } from "./lib/db";
+
+// initialize db
+connectDB();
 
 const app = express();
 
